@@ -18,9 +18,15 @@ Make sure your hostname is resolvable via DNS or via ```/etc/hosts``` to allow f
 2.  Clone the Mesos git [repository](https://git-wip-us.apache.org/repos/asf/mesos.git).
 
 	```
-	$ git clone https://git-wip-us.apache.org/repos/asf/mesos.git
-	```
+	# Official Repo
+	$ git clone https://git-wip-us.apache.org/repos/asf/mesos.git (Official)
 	
+	# Mirror Repo (Faster but delayed  ~4hrs)
+	$ git clone https://github.com/apache/mesos (Mirror)
+	```
+
+**NOTE:** The official tar.gz distro 0.26.0 fails to fully complete ```make check``` on Mac OS X 10.11.2, it works, however, with the cloned repository. 
+ 
 ## Preparation
 
 ### Mac OS X (=> 10.9)
