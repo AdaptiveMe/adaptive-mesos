@@ -32,6 +32,14 @@ Make sure your hostname is resolvable via DNS or via ```/etc/hosts``` to allow f
 ### Mac OS X (=> 10.9)
 
 ```
+$ brew install Caskroom/cask/virtualbox
+$ brew install Caskroom/cask/virtualbox-extension-pack
+$ brew install docker-machine
+$ docker-machine create --driver virtualbox --virtualbox-memory=4096 --virtualbox-disk-size=40960 default
+$ eval "$(docker-machine env dev)"
+```
+
+```
 # Install Command Line Tools.
 $ xcode-select --install
 
